@@ -11,6 +11,10 @@ class App extends Component {
           <h1 className="App-title">A Tool to Calculate.</h1>
         </header>
         <div id="TheCalculator">
+          <div id="TheScreen">
+            <div className="screenText resultText">Placeholder</div>
+            <div className="screenText calculationText">Placeholder</div>
+          </div>
         </div>
       </div>
     );

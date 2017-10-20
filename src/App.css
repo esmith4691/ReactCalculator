@@ -35,3 +35,30 @@ body{
   display: inline-block;
 }
 
+#TheScreen {
+  background: white;
+  width:500px;
+  display: inline-block;
+  margin-top: 50px;
+  height:150px;
+  border:solid 1px #dcdcdc;
+}
+
+.screenText {
+  width:450px;
+  text-align: right;
+}
+
+.resultText{
+  margin-top: 40px;
+  height:40px;
+  font-size: xx-large;
+  color:#333;
+}
+
+.calculationText{
+  margin-top: 10px;
+  height:40px;
+  font-size: x-large;
+  color:#555;
+}
