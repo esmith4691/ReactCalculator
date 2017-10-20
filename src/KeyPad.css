@@ -1,3 +1,8 @@
+#TheResetPad{
+  width: 100%;
+  text-align: right;
+}
+
 #TheNumberPad{
   width: 350px;
   margin-top: 5px;
@@ -10,6 +15,9 @@
   margin-top: 5px;
   vertical-align: top;
 }
+
+#TheSubmitPad{
+  width: 100%;
 }
 
 #TheKeyPad .KeyPadButton{
@@ -30,6 +38,14 @@
   padding: 15px 0;
   width: 135px;
   margin: 12px 0;
+}
+
+#TheKeyPad .ResetPadButton{
+  padding: 15px 0;
+  width: 120px;
+  margin: 12px 10px;
+  background-color: #f3ef9d;
+  font-weight: bold;
 }
 
 #TheKeyPad .KeyPadButton:hover{
