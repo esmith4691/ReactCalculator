@@ -1,38 +1,15 @@
 body{
-  background: #e8f1f1;
-}
-
-#App {
+  background: #535454;
   text-align: center;
 }
 
-#App-logo {
-  height: 40px;
-}
-
-#App-header {
-  background-color: #549c9c;
-  height: 100px;
-  padding: 20px;
-  color: white;
-  font-family: monospace;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 #TheCalculator {
-  margin-top: 50px;
+  margin-top: 150px;
   width: 600px;
   background-color: #bbbdbd;
   height:800px;
   display: inline-block;
+  border: 2px solid #aaa;
 }
 
 #TheScreen {
@@ -41,7 +18,7 @@ body{
   display: inline-block;
   margin-top: 50px;
   height:150px;
-  border:solid 1px #dcdcdc;
+  border: 1px solid #aaa;
 }
 
 .screenText {
