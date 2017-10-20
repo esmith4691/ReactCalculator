@@ -3,9 +3,17 @@ import './App.css';
 import './KeyPad.css';
 
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = { calculationText: 'CalcText', resultText: 'ResultText'};
+  constructor(){
+    super();
+
+    this.state = {
+      calculationText: 'CalculationText',
+      resultText: 'ResultText',
+      buttonClicked: (el) => {
+        var buttonText = el.target.textContent;
+        this.clickButton(buttonText);
+      }
+    };
   }
 
   render() {
@@ -19,36 +27,46 @@ class App extends Component {
           <div ref="TheKeyPad" id="TheKeyPad">
             <div>
               <div id="TheResetPad">
-                <button className="KeyPadButton ResetPadButton">C</button>
-                <button className="KeyPadButton ResetPadButton">CE</button>
+                {this.drawButton("ResetPadButton","C")}
+                {this.drawButton("ResetPadButton","CE")}
               </div>
               <div id="TheNumberPad">
-                <button className="KeyPadButton NumberPadButton">9</button>
-                <button className="KeyPadButton NumberPadButton">8</button>
-                <button className="KeyPadButton NumberPadButton">7</button>
-                <button className="KeyPadButton NumberPadButton">6</button>
-                <button className="KeyPadButton NumberPadButton">5</button>
-                <button className="KeyPadButton NumberPadButton">4</button>
-                <button className="KeyPadButton NumberPadButton">3</button>
-                <button className="KeyPadButton NumberPadButton">2</button>
-                <button className="KeyPadButton NumberPadButton">1</button>
-                <button className="KeyPadButton NumberPadButton">0</button>
-                <button id="PointButton" className="KeyPadButton NumberPadButton">.</button>
+                {this.drawButton("NumberPadButton","9")}
+                {this.drawButton("NumberPadButton","8")}
+                {this.drawButton("NumberPadButton","7")}
+                {this.drawButton("NumberPadButton","6")}
+                {this.drawButton("NumberPadButton","5")}
+                {this.drawButton("NumberPadButton","4")}
+                {this.drawButton("NumberPadButton","3")}
+                {this.drawButton("NumberPadButton","2")}
+                {this.drawButton("NumberPadButton","1")}
+                {this.drawButton("NumberPadButton","0")}
+                {this.drawButton("NumberPadButton PointButton",".")}
               </div>
               <div id="TheOperatorPad">
-                <button className="KeyPadButton OperatorPadButton">x</button>
-                <button className="KeyPadButton OperatorPadButton">\</button>
-                <button className="KeyPadButton OperatorPadButton">-</button>
-                <button className="KeyPadButton OperatorPadButton">+</button>
+                {this.drawButton("OperatorPadButton","x")}
+                {this.drawButton("OperatorPadButton","/")}
+                {this.drawButton("OperatorPadButton","-")}
+                {this.drawButton("OperatorPadButton","+")}
               </div>
               <div id="TheSubmitPad">
-                <button className="KeyPadButton SubmitButton">=</button>
+                {this.drawButton("SubmitButton","=")}
               </div>
             </div>
           </div>
         </div>
       </div>
     );
+  }
+
+  drawButton(className, text){
+    className = "KeyPadButton " + className;
+    return <button className={className} onClick={this.state.buttonClicked}>{text}</button>
+  }
+
+  clickButton(text){
+    var newText = text;
+    this.setState({calculationText: newText});
   }
 }
 
