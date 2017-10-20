@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './KeyPad.css';
 
-class KeyPad extends Component {
+class NumberKeyPad extends Component {
   render() {
-    return React.createElement('div', {className: 'KeyPad'},
+    return React.createElement('div', {className: 'NumberKeyPad'},
             this.renderButton(9),
             this.renderButton(8),
             this.renderButton(7),
@@ -19,12 +19,12 @@ class KeyPad extends Component {
   }
 
   renderButton(number) {
-    return <button className="KeyPadButton NumberPadButton" number={number}>{number}</button>;
+    return <button className="KeyPadButton NumberPadButton" value={number}>{number}</button>;
   }
 
   renderPointButton() {
-    return <button className="KeyPadButton NumberPadButton" id="PointButton">.</button>;
+    return <button id="PointButton" className="KeyPadButton NumberPadButton" value=".">.</button>;
   }
 }
 
-export default KeyPad;
+export default NumberKeyPad;
