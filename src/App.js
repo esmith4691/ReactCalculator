@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import './KeyPad.css';
-import ResetKeyPad from './ResetKeyPad'
-import NumberKeyPad from './NumberKeyPad'
-import OperatorKeyPad from './OperatorKeyPad'
-import SubmitKeyPad from './SubmitKeyPad'
 
 class App extends Component {
   constructor(props){
@@ -22,10 +18,32 @@ class App extends Component {
           </div>
           <div ref="TheKeyPad" id="TheKeyPad">
             <div>
-              <div id="TheResetPad"><ResetKeyPad/></div>
-              <div id="TheNumberPad"><NumberKeyPad/></div>
-              <div id="TheOperatorPad"><OperatorKeyPad/></div>
-              <div id="TheSubmitPad"><SubmitKeyPad/></div>
+              <div id="TheResetPad">
+                <button className="KeyPadButton ResetPadButton">C</button>
+                <button className="KeyPadButton ResetPadButton">CE</button>
+              </div>
+              <div id="TheNumberPad">
+                <button className="KeyPadButton NumberPadButton">9</button>
+                <button className="KeyPadButton NumberPadButton">8</button>
+                <button className="KeyPadButton NumberPadButton">7</button>
+                <button className="KeyPadButton NumberPadButton">6</button>
+                <button className="KeyPadButton NumberPadButton">5</button>
+                <button className="KeyPadButton NumberPadButton">4</button>
+                <button className="KeyPadButton NumberPadButton">3</button>
+                <button className="KeyPadButton NumberPadButton">2</button>
+                <button className="KeyPadButton NumberPadButton">1</button>
+                <button className="KeyPadButton NumberPadButton">0</button>
+                <button id="PointButton" className="KeyPadButton NumberPadButton">.</button>
+              </div>
+              <div id="TheOperatorPad">
+                <button className="KeyPadButton OperatorPadButton">x</button>
+                <button className="KeyPadButton OperatorPadButton">\</button>
+                <button className="KeyPadButton OperatorPadButton">-</button>
+                <button className="KeyPadButton OperatorPadButton">+</button>
+              </div>
+              <div id="TheSubmitPad">
+                <button className="KeyPadButton SubmitButton">=</button>
+              </div>
             </div>
           </div>
         </div>
