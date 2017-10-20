@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import KeyPad from './KeyPad'
+import './KeyPad.css';
+import ResetKeyPad from './ResetKeyPad'
+import NumberKeyPad from './NumberKeyPad'
+import OperatorKeyPad from './OperatorKeyPad'
+import SubmitKeyPad from './SubmitKeyPad'
 
 class App extends Component {
   constructor(props){
@@ -16,7 +20,14 @@ class App extends Component {
             <div className="screenText resultText">{this.state.resultText}</div>
             <div className="screenText calculationText">{this.state.calculationText}</div>
           </div>
-          <div ref="TheKeyPad" id="TheKeyPad"><KeyPad/></div>
+          <div ref="TheKeyPad" id="TheKeyPad">
+            <div>
+              <div id="TheResetPad"><ResetKeyPad/></div>
+              <div id="TheNumberPad"><NumberKeyPad/></div>
+              <div id="TheOperatorPad"><OperatorKeyPad/></div>
+              <div id="TheSubmitPad"><SubmitKeyPad/></div>
+            </div>
+          </div>
         </div>
       </div>
     );
