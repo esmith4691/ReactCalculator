@@ -26,3 +26,12 @@ body{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+#TheCalculator {
+  margin-top: 50px;
+  width: 600px;
+  background-color: #bbbdbd;
+  height:700px;
+  display: inline-block;
+}
+
