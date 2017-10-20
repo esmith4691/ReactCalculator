@@ -48,6 +48,22 @@
   font-weight: bold;
 }
 
+#TheKeyPad .SubmitButton{
+  padding: 20px;
+  width: 100%;
+  margin: 12px 10px;
+  background-color: #7ca2a2;
+  font-weight: bold;
+}
+
+#TheKeyPad .KeyPadButton.SubmitButton:hover{
+  background-color: #93cece;
+}
+
+#TheKeyPad .KeyPadButton.ResetPadButton:hover{
+  background-color: #e4de5f;
+}
+
 #TheKeyPad .KeyPadButton:hover{
   color: #3e4a46;
   background-color: #fbf9f7;
