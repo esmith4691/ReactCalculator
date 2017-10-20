@@ -31,7 +31,7 @@ body{
   margin-top: 50px;
   width: 600px;
   background-color: #bbbdbd;
-  height:700px;
+  height:800px;
   display: inline-block;
 }
 
@@ -58,7 +58,14 @@ body{
 
 .calculationText{
   margin-top: 10px;
-  height:40px;
   font-size: x-large;
   color:#555;
+}
+
+#TheKeyPad{
+  width:500px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 50px;
+  display: flex;
 }

@@ -1,0 +1,40 @@
+.KeyPad{
+  display: inline-block;
+  width: 350px;
+  margin-top: 75px;
+}
+
+.KeyPad .KeyPadButton{
+  font-size: x-large;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: #3e4a46;
+  border:none;
+  background-color: #eceae7;
+}
+
+.KeyPad .NumberPadButton{
+  padding: 15px 30px;
+  margin: 12px 15px;
+}
+
+.KeyPad .KeyPadButton:hover{
+  color: #3e4a46;
+  background-color: #fbf9f7;
+}
+
+.KeyPad .KeyPadButton:focus{
+  outline:none;
+}
+
+.KeyPad .KeyPadButton:nth-child(1), .KeyPadButton:nth-child(2), .KeyPadButton:nth-child(3){
+  margin-top: 30px;
+}
+
+.KeyPad .KeyPadButton:nth-child(1), .KeyPadButton:nth-child(4), .KeyPadButton:nth-child(7), .KeyPadButton:nth-child(10){
+  margin-left: 5px;
+}
+
+.KeyPad #PointButton{
+  width: 178px;
+}
