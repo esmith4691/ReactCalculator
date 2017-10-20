@@ -3,6 +3,13 @@
   margin-top: 5px;
   display: inline-block;
 }
+
+#TheOperatorPad{
+  width: 150px;
+  display: inline-block;
+  margin-top: 5px;
+  vertical-align: top;
+}
 }
 
 #TheKeyPad .KeyPadButton{
@@ -19,6 +26,12 @@
   margin: 12px 15px;
 }
 
+#TheKeyPad .OperatorPadButton{
+  padding: 15px 0;
+  width: 135px;
+  margin: 12px 0;
+}
+
 #TheKeyPad .KeyPadButton:hover{
   color: #3e4a46;
   background-color: #fbf9f7;
@@ -30,7 +43,8 @@
 
 #TheKeyPad .NumberPadButton:nth-child(1),
 #TheKeyPad .NumberPadButton:nth-child(2),
-#TheKeyPad .NumberPadButton:nth-child(3){
+#TheKeyPad .NumberPadButton:nth-child(3),
+#TheKeyPad .OperatorPadButton:nth-child(1){
   margin-top: 30px;
 }
 
