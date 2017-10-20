@@ -5,6 +5,7 @@ import KeyPad from './KeyPad'
 class App extends Component {
   constructor(props){
     super(props);
+    this.state = { calculationText: 'CalcText', resultText: 'ResultText'};
   }
 
   render() {
@@ -12,8 +13,8 @@ class App extends Component {
       <div id="App">
         <div id="TheCalculator">
           <div id="TheScreen">
-            <div className="screenText resultText">Placeholder</div>
-            <div className="screenText calculationText">Placeholder</div>
+            <div className="screenText resultText">{this.state.resultText}</div>
+            <div className="screenText calculationText">{this.state.calculationText}</div>
           </div>
           <div ref="TheKeyPad" id="TheKeyPad"><KeyPad/></div>
         </div>
